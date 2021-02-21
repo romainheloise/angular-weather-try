@@ -1,0 +1,16 @@
+<div ng-class="$ctrl.isDisplayed? 'favbar-all large' : 'favbar-all small'">
+  <button class="favbar-show" ng-click="$ctrl.isDisplayed = !$ctrl.isDisplayed">
+    {{$ctrl.isDisplayed? '>' : '<'}}
+  </button>
+  <div ng-if="$ctrl.isDisplayed">
+    <a href="#!/signup">S'inscrire</a>
+    <a href="#!/signin">Se logger</a>
+    <p ng-click="$ctrl.logOut()">Se deconnecter</p>
+    <h4>Favories</h4>
+  </div>
+  <fav-card
+    ng-if="$ctrl.isDisplayed"
+    ng-repeat="city in $ctrl.favList.favoritesCities"
+    city="city"
+  ></fav-card>
+</div>

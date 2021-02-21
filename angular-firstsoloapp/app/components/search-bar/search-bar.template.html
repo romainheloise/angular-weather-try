@@ -1,0 +1,14 @@
+<div class="searchbar-wrapper">
+  <button ng-click="$ctrl.isDisplayed = !$ctrl.isDisplayed" class="glass">
+    +
+  </button>
+  <div class="searchbar" ng-if="$ctrl.isDisplayed">
+    <input
+      type="text"
+      ng-model="$ctrl.searchValue"
+      ng-change="$ctrl.error=''"
+    />
+    <button ng-click="$ctrl.onSearch($ctrl.searchValue)">chercher</button>
+    <p>{{$ctrl.error}}</p>
+  </div>
+</div>

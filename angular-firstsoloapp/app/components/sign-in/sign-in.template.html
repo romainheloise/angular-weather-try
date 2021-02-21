@@ -1,0 +1,16 @@
+<div>
+  <form ng-submit="$ctrl.submit($ctrl.inputs)">
+    <input
+      type="text"
+      placeholder="username"
+      ng-model="$ctrl.inputs.username"
+    />
+    <input
+      type="text"
+      placeholder="password"
+      ng-model="$ctrl.inputs.password"
+    />
+    <input type="submit" value="se logger" />
+  </form>
+  <p>{{$ctrl.message}}</p>
+</div>

@@ -1,0 +1,20 @@
+<div class="city-card">
+  <div class="city-card-top">
+    <p>{{$ctrl.city.timezone | timezone}}</p>
+    <div class="city-card-info-top">
+      <h5>{{$ctrl.city.name}}</h5>
+      <p>{{$ctrl.city.sys.country}}</p>
+      <button ng-click="$ctrl.addToFav($ctrl.city.id)">Fav</button>
+      <button ng-click="$ctrl.deleteOne($ctrl.city.id)">x</button>
+    </div>
+  </div>
+  <div>
+    <div class="city-card-temp">
+      <img
+        src="http://openweathermap.org/img/wn/{{$ctrl.city.weather[0].icon}}.png"
+      />
+      <h5>{{$ctrl.city.main.temp | temp}} °</h5>
+    </div>
+    <p>{{$ctrl.city.weather[0].description}}</p>
+  </div>
+</div>

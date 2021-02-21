@@ -1,0 +1,12 @@
+<div class="fav-card">
+  <img
+    src="http://openweathermap.org/img/wn/{{$ctrl.city.weather[0].icon}}.png"
+  />
+  <div class="fav-card-top">
+    <div class="fav-card-top-delete">
+      <p>{{$ctrl.city.name}}</p>
+      <button ng-click="$ctrl.deleteOne($ctrl.city.id)">x</button>
+    </div>
+    <button ng-click="$ctrl.addToMain($ctrl.city)">see more</button>
+  </div>
+</div>

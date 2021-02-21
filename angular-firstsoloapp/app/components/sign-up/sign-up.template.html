@@ -1,0 +1,20 @@
+<div>
+  <form ng-submit="$ctrl.onSubmit($ctrl.input)">
+    <input
+      type="text"
+      ng-model="$ctrl.input.username"
+      placeholder="username"
+      ng-change="$ctrl.message = {}"
+    />
+    <p>{{$ctrl.message.username}}</p>
+    <input
+      type="text"
+      ng-model="$ctrl.input.password"
+      placeholder="password"
+      ng-change="$ctrl.message = {}"
+    />
+    <p>{{$ctrl.message.password}}</p>
+    <input type="submit" id="submit" value="s'inscrire" />
+    <p>{{$ctrl.message.success}}</p>
+  </form>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="apiTest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Weather Finder</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="components/components.module.js"></script>
+    <script src="components/search-page/search-page.module.js"></script>
+    <script src="components/search-page/search-page.component.js"></script>
+    <script src="components/search-bar/search-bar.module.js"></script>
+    <script src="components/search-bar/search-bar.component.js"></script>
+    <script src="components/city-card/city-card.module.js"></script>
+    <script src="components/city-card/city-card.component.js"></script>
+    <script src="components/fav-bar/fav-bar.module.js"></script>
+    <script src="components/fav-bar/fav-bar.component.js"></script>
+    <script src="components/fav-card/fav-card.module.js"></script>
+    <script src="components/fav-card/fav-card.component.js"></script>
+    <script src="components/sign-up/sign-up.module.js"></script>
+    <script src="components/sign-up/sign-up.component.js"></script>
+    <script src="components/sign-in/sign-in.module.js"></script>
+    <script src="components/sign-in/sign-in.component.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/fav-list/fav-list.module.js"></script>
+    <script src="core/fav-list/fav-list.service.js"></script>
+    <script src="core/temp-filter/temp-filter.filter.js"></script>
+    <script src="core/time-filter/time-filter.filter.js"></script>
+    <script src="core/search-bar-list/search-bar-list.module.js"></script>
+    <script src="core/search-bar-list/search-bar-list.service.js"></script>
+    <script src="core/sign-up/sign-up.module.js"></script>
+    <script src="core/sign-up/sign-up.service.js"></script>
+  </head>
+  <body>
+    <div ng-view class="app"></div>
+  </body>
+</html>

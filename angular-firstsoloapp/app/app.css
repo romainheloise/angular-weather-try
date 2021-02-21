@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  height: 100%;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+p {
+  margin: 0;
+}
+
+input,
+select,
+button,
+textarea:focus {
+  outline: none;
+}
+
+.searchbar.ng-enter,
+.searchbar.ng-move {
+  animation: popIn 0.2s forwards ease;
+}
+
+.searchbar.ng-leave {
+  animation: popOut 0.2s forwards ease;
+}
+
+.searchbar.ng-enter,
+.searchbar.ng-leave,
+.searchbar.ng-move {
+  transition: 0.2s all;
+}
+
+.city-card-comp.ng-enter,
+.city-card-comp.ng-move {
+  animation: popIn 0.2s forwards ease;
+}
+
+.city-card-comp.ng-leave {
+  animation: popOut 0.2s forwards ease;
+}
+
+.fav-card-comp.ng-enter,
+.fav-card-comp.ng-move {
+  animation: popIn 0.2s forwards ease;
+}
+
+.fav-card-comp.ng-leave {
+  animation: popOut 0.2s forwards ease;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  75% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes popOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.glass {
+  margin-left: 20px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.searchbar {
+  width: fit-content;
+  background-color: yellow;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  margin: 20px;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 2px solid black;
+  margin-right: 20px;
+}
+
+.city-card {
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.fav-bar-comp {
+  width: fit-content;
+}
+
+h4 {
+  background-color: black;
+  color: yellow;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+}
+
+.favbar-all {
+  transform-origin: right;
+  height: 100%;
+  transition: 0.2s ease all;
+  position: relative;
+  background-color: yellow;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.small {
+  width: 50px;
+}
+
+.large {
+  width: 300px;
+}
+
+.favbar-show {
+  position: absolute;
+  left: -10px;
+  top: 400px;
+}
+
+.fav-card-comp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fav-card-top {
+  padding: 10px;
+  display: flex;
+  font-weight: bold;
+  color: yellow;
+  flex-direction: column;
+  width: 100%;
+}
+
+.fav-card img {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+
+.fav-card {
+  position: relative;
+  background-color: black;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  width: 90%;
+}
+
+.city-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.city-card-top {
+  padding: 10px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 5px 5px;
+  padding: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+button:focus {
+  outline: none;
+}
+
+.searchbar-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.search-page-all {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.search-page-bar {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.city-card-temp {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.city-card-info-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fav-card-top-delete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}

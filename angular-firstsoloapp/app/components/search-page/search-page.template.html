@@ -1,0 +1,15 @@
+<div class="search-page-all">
+  <div class="search-page-content">
+    <search-bar></search-bar>
+    <div class="city-card-wrapper">
+      <city-card
+        ng-repeat="city in $ctrl.searchBarList.cityList"
+        city="city"
+        class="city-card-comp"
+      ></city-card>
+    </div>
+  </div>
+  <div class="search-page-bar">
+    <fav-bar class="fav-bar-comp"></fav-bar>
+  </div>
+</div>
