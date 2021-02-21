@@ -18,10 +18,16 @@
         });
     };
 
+    checkPresence = (cityId) => {
+      const alreadyHere = this.favoritesCities.filter(city => city.id === cityId);
+      return alreadyHere.length === 0 && true;
+
+    }
+
     addOne = (cityId) => {
       const token = localStorage.getItem("token");
 
-      if (token) {
+      if (token && this.checkPresence(cityId)) {
         this.$http
           .post("http://localhost:5000/users/fav", {
             user: token,
@@ -32,6 +38,7 @@
           })
           .catch((err) => console.log(err));
       }
+
     };
 
     clear = () => {
@@ -46,6 +53,7 @@
             headers: { Authorization: "Bearer " + token },
           })
           .then((resp) => {
+            this.favoritesCities = []
             resp.data.forEach((data) => {
               const { city } = data;
               this.fetchOne(city);
